@@ -28,11 +28,19 @@ for(i=0;i<n3;i++)
      while(sum!=sum1 ||sum1!=sum2 ||sum!=sum2)
     {
     if(sum>sum1 && sum>sum2|| sum==sum1 && sum>sum2 || sum==sum2 &&sum>sum1)
-            sum=sum-a[p++];
-          if(sum1>sum && sum1>sum2|| sum1==sum && sum1>sum2 || sum1==sum2 &&sum1>sum)
-            sum1=sum1-b[q++];
+    { 
+        sum=sum-a[p++];
+    }
+         
+             if(sum1>sum && sum1>sum2|| sum1==sum && sum1>sum2 || sum1==sum2 &&sum1>sum)
+             {
+                 sum1=sum1-b[q++];
+         }
           if(sum2>sum &&sum2>sum1 || sum2==sum1 && sum2>sum || sum2==sum &&sum2>sum1)
-            sum2=sum2-c[r++]; }
+          {
+              sum2=sum2-c[r++]; 
+          }
+     }
 cout<<sum;
    return 0;
 }
