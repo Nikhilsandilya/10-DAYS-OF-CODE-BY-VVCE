@@ -10,9 +10,9 @@ struct Player {
     string name;
 };
 
-class Checker{
+class Checker
+{
 public:
-  	// complete this method
     static int comparator(Player a, Player b)
      {
 	if(a.score>b.score)
